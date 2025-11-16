@@ -16,34 +16,53 @@ export const SingleChoiceQuestion = ({
     showAnswer: boolean;
 }) => {
     const { responses, setResponse } = useResponses();
-    const { statement, options, answer, explanation } = question;
+    const { statement, options, answer, explanation, image } = question;
     const value = responses[id] || null;
+
     return (
-        <Flex direction={"column"} width={"50%"} gap={"1"}>
-            <Box>
-                <Card>
-                    <p>{statement}</p>
-                    <RadioRoot
-                        value={value}
-                        onValueChange={(newValue) => setResponse(id, newValue)}
-                    >
-                        {Object.entries(options).map(([key, value]) => (
-                            <RadioItem value={key}>
-                                {key}: {value}
-                            </RadioItem>
-                        ))}
-                    </RadioRoot>
-                </Card>
-            </Box>
+        <Flex direction="column" width="60%" gap="2">
+            <Card>
+                <Flex gap="4" align="start">
+                    <Box flexGrow="2" flexBasis="0">
+                        <p>{statement}</p>
+
+                        <RadioRoot
+                            value={value}
+                            onValueChange={(newValue) =>
+                                setResponse(id, newValue)
+                            }
+                        >
+                            {Object.entries(options).map(([key, value]) => (
+                                <RadioItem key={key} value={key}>
+                                    {key}: {value}
+                                </RadioItem>
+                            ))}
+                        </RadioRoot>
+                    </Box>
+
+                    {image && (
+                        <Box flexGrow="1" flexBasis="0">
+                            <img
+                                src={image}
+                                alt=""
+                                style={{
+                                    width: "100%",
+                                    height: "auto",
+                                    objectFit: "contain",
+                                    borderRadius: "var(--radius-2)",
+                                }}
+                            />
+                        </Box>
+                    )}
+                </Flex>
+            </Card>
 
             {showAnswer && (
-                <Box>
-                    <FeedbackBox
-                        explanation={explanation}
-                        answer={answer}
-                        isCorrect={value === answer}
-                    />
-                </Box>
+                <FeedbackBox
+                    explanation={explanation}
+                    answer={answer}
+                    isCorrect={value === answer}
+                />
             )}
         </Flex>
     );

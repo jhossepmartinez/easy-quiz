@@ -136,17 +136,19 @@
         {
             "id": 22,
             "statement": "El tercer valor de la tabla de N1 es:",
+            "image": "/images/question22.png",
             "options": {
                 "a": "6",
                 "b": "8",
                 "c": "18",
                 "d": "otro"
             },
-            "answer": "c"
+            "answer": "a"
         },
         {
             "id": 23,
             "statement": "El cuarto valor de la tabla de N8 es:",
+            "image": "/images/question22.png",
             "options": {
                 "a": "1",
                 "b": "22",
@@ -164,29 +166,31 @@
                 "c": "9",
                 "d": "13"
             },
-            "answer": "c"
+            "answer": "d"
         },
         {
             "id": 25,
             "statement": "¿Cuál sería el valor correcto en la casilla 5 de P2?",
+            "image": "/images/question25.png",
             "options": {
                 "a": "37",
                 "b": "29",
                 "c": "32",
                 "d": "otro"
             },
-            "answer": "c"
+            "answer": "a"
         },
         {
             "id": 26,
             "statement": "Valor en casilla n de P2 sin más mensajes:",
+            "image": "/images/question25.png",
             "options": {
                 "a": "(8*(n-1)) + 28",
                 "b": "8 * (n-1)",
                 "c": "8 * n",
-                "d": "otro"
+                "d": "otro: (8 * n - 4) + 29"
             },
-            "answer": "a"
+            "answer": "d"
         },
         {
             "id": 27,
@@ -202,6 +206,7 @@
         {
             "id": 28,
             "statement": "¿Cuál es el valor del vector de f?",
+            "image": "/images/question28.png",
             "options": {
                 "a": "(6, 5, 3, 1)",
                 "b": "(2, 0, 4, 3)",
@@ -213,17 +218,19 @@
         {
             "id": 29,
             "statement": "¿Cuál es el valor del vector de k?",
+            "image": "/images/question28.png",
             "options": {
                 "a": "(1, 5, 3, 1)",
                 "b": "(3, 5, 1, 1)",
                 "c": "(3, 5, 2, 1)",
                 "d": "otro: (3, 5, 2, 0)"
             },
-            "answer": "c"
+            "answer": "d"
         },
         {
             "id": 30,
-            "statement": "El alfa más pequeño que cumple el hash para almacenar 2017 es:",
+            "statement": "Si el valor a almacenar es 2017, el alfa más pequeño que permite cumplir la regla del hash es",
+            "image": "/images/question30.png",
             "options": {
                 "a": "500",
                 "b": "89",
@@ -234,7 +241,7 @@
         },
         {
             "id": 31,
-            "statement": "Respecto a encriptación simétrica y asimétrica, ¿cuál es verdadera?",
+            "statement": "Respecto a algoritmos de encriptación simétricos y asimétricos, ¿Cuál de las siguientes alternativas es verdadera",
             "options": {
                 "a": "Simétricos sólo en comunicación síncrona",
                 "b": "Asimétricos permiten mayor volumen pero son más lentos",

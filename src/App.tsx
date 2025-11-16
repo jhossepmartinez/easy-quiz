@@ -1,16 +1,21 @@
 import { Button, Flex, Text } from "@radix-ui/themes";
 import "./App.css";
-import questions from "./assets/data/questions.json";
+import questionsData from "./assets/data/questions.json";
 import type { SingleChoiceQuestion as SingleChoiceQuestionType } from "./types";
 import { useMemo, useState } from "react";
 import { useResponses } from "./context/responsesContext/use";
 import { SingleChoiceQuestion } from "./components/SingleChoiceQuestion";
+import { shuffleArray } from "./utils";
 
 function App() {
     const [showAnswers, setShowAnswers] = useState(false);
     const trueFalseQuestions =
-        questions.questions as SingleChoiceQuestionType[];
+        questionsData.questions as SingleChoiceQuestionType[];
     const { responses, resetResponses } = useResponses();
+
+    const shuffledQuestions = useMemo(() => {
+        return shuffleArray(trueFalseQuestions);
+    }, [trueFalseQuestions]);
 
     const correctAnswersCount = useMemo(() => {
         return trueFalseQuestions.reduce((count, question, index) => {
@@ -23,6 +28,7 @@ function App() {
             return count;
         }, 0);
     }, [responses, trueFalseQuestions]);
+
     return (
         <>
             <Flex
@@ -52,15 +58,12 @@ function App() {
                 </Button>
             </Flex>
             <Flex direction={"column"} align={"center"} gap="4">
-                {trueFalseQuestions.map((question, index) => (
+                {shuffledQuestions.map((question, index) => (
                     <SingleChoiceQuestion
                         key={index}
                         id={index}
                         question={question}
-                        statement={question.statement}
-                        answer={question.answer}
                         showAnswer={showAnswers}
-                        explanation={question.explanation}
                     />
                 ))}
             </Flex>

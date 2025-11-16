@@ -11,6 +11,7 @@ export const FeedbackBox = ({
 }) => {
     const color: "green" | "ruby" = isCorrect ? "green" : "ruby";
     const missingAnswer: boolean = answer === null;
+    console.log("answer:", answer);
     return (
         <Callout.Root color={color} size="1">
             <Callout.Icon>

@@ -6,9 +6,10 @@ export type TrueFalseQuestion = {
 
 export type SingleChoiceQuestion = {
     statement: string;
-    options: Record<string, string>;
+    options: Record<string, string | undefined>;
     answer: string;
     explanation?: string | undefined;
+    image?: string | undefined;
 };
 
 export type Responses = Record<number, string>;
