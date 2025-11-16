@@ -1,0 +1,291 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "statement": "Si en un sistema distribuido escalable las entidades no tuvieran movilidad, entonces no se necesitaría un sistema de nombres.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "F"
+        },
+        {
+            "id": 2,
+            "statement": "Pese a que el reloj basado en un cristal de cuarzo suele desviarse de la hora real, si lo coordinamos con la UTC cada segundo, podríamos mantener la misma hora que los relojes atómicos.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "F"
+        },
+        {
+            "id": 3,
+            "statement": "En un reloj lógico de Lamport no podemos capturar causalidad.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "V"
+        },
+        {
+            "id": 4,
+            "statement": "La desventaja de ARP es que al aumentar la cantidad de dispositivos se genera mucho ancho de banda inútil y se interrumpe constantemente a los hosts no involucrados.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "V"
+        },
+        {
+            "id": 5,
+            "statement": "Dado un sistema con N nodos, para que todos puedan utilizar una vez la sección crítica, se necesita enviar más mensajes en un algoritmo centralizado que en un algoritmo de red en anillo basado en token.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "V"
+        },
+        {
+            "id": 6,
+            "statement": "En NFS la relación cliente-servidor es simétrica, ya que cada nodo puede actuar como cliente y servidor a la vez.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "V"
+        },
+        {
+            "id": 7,
+            "statement": "Respecto a resolución de nombres DNS, la resolución no recursiva (iterativa) tiene peor desempeño que la resolución recursiva controlada por el servidor.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "D"
+        },
+        {
+            "id": 8,
+            "statement": "Si en un sistema distribuido de N procesos que se comunican asincrónicamente, si la cantidad de procesos defectuosos es menor al 30%, entonces es posible llegar a consenso.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "F"
+        },
+        {
+            "id": 9,
+            "statement": "El implementar políticas de seguridad implica tener que implementar sistemas de autenticación.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "V"
+        },
+        {
+            "id": 10,
+            "statement": "Si un proceso de un sistema distribuido no tiene sus interfaces expuestas a la red, entonces no es necesario limitar la vida útil del token de autenticación para utilizar dicho proceso.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "F"
+        },
+
+        {
+            "id": 11,
+            "statement": "Los requisitos de un algoritmo de consenso son: terminación, acuerdo e integridad.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "V"
+        },
+        {
+            "id": 12,
+            "statement": "Después de una comunicación entre dos procesos que poseen relojes lógicos de Lamport, sus relojes irán sincronizados en los mismos valores.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "D"
+        },
+        {
+            "id": 13,
+            "statement": "Si una persona se cambia su nombre y primer apellido por uno que ninguna persona tiene actualmente, entonces, podríamos decir que su nombre es su identificador.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "F"
+        },
+        {
+            "id": 14,
+            "statement": "El beneficio de los relojes vectoriales es que, dado dos eventos en el mismo o diferentes procesos, podemos decidir qué evento ocurrió antes que el otro en base a los valores de sus vectores.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "D"
+        },
+        {
+            "id": 15,
+            "statement": "En los algoritmos de exclusión mutua centralizado y distribuido no se puede sufrir de inanición.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "V"
+        },
+        {
+            "id": 16,
+            "statement": "En una red con una gran cantidad de dispositivos, resolver un nombre usando punteros de reenvío es más rápido que usar ARP.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "D"
+        },
+        {
+            "id": 17,
+            "statement": "Si en un sistema distribuido de N procesos, más del 30% de los procesos son defectuosos, entonces jamás se podrá llegar a un consenso.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "V"
+        },
+        {
+            "id": 18,
+            "statement": "La prueba de trabajo (Proof of Work) en blockchain se utiliza para asegurar la autenticación del proceso que propone el nuevo bloque.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "F"
+        },
+        {
+            "id": 19,
+            "statement": "Los problemas que deben resolver los sistemas de nombres son: fraccionamiento, replicación y almacenamiento caché.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "V"
+        },
+        {
+            "id": 20,
+            "statement": "Si a las direcciones IPv4 se les agregara un código inicial único por país, entonces las direcciones IPv4 podrían ser utilizadas como identificador de los computadores.",
+            "options": { "V": "Verdadero", "F": "Falso", "D": "Depende" },
+            "answer": "F"
+        },
+
+        {
+            "id": 21,
+            "statement": "¿Cuál de los siguientes métodos de ataque no corresponde a su definición?",
+            "options": {
+                "a": "Intercepción: obtener copias de mensajes sin autorización",
+                "b": "Suplantación: utilizar la identidad de otro sin autorización",
+                "c": "Denegación de servicios: inundar de mensajes para negar acceso",
+                "d": "Alteración de mensajes: almacenar mensajes y enviarlos posteriormente"
+            },
+            "answer": "d"
+        },
+        {
+            "id": 22,
+            "statement": "El tercer valor de la tabla de N1 es:",
+            "options": {
+                "a": "6",
+                "b": "8",
+                "c": "18",
+                "d": "otro"
+            },
+            "answer": "c"
+        },
+        {
+            "id": 23,
+            "statement": "El cuarto valor de la tabla de N8 es:",
+            "options": {
+                "a": "1",
+                "b": "22",
+                "c": "34",
+                "d": "otro (18)"
+            },
+            "answer": "d"
+        },
+        {
+            "id": 24,
+            "statement": "En un sistema con 6 nodos usando Bully, ¿cuántos mensajes se envían?",
+            "options": {
+                "a": "5",
+                "b": "8",
+                "c": "9",
+                "d": "13"
+            },
+            "answer": "c"
+        },
+        {
+            "id": 25,
+            "statement": "¿Cuál sería el valor correcto en la casilla 5 de P2?",
+            "options": {
+                "a": "37",
+                "b": "29",
+                "c": "32",
+                "d": "otro"
+            },
+            "answer": "c"
+        },
+        {
+            "id": 26,
+            "statement": "Valor en casilla n de P2 sin más mensajes:",
+            "options": {
+                "a": "(8*(n-1)) + 28",
+                "b": "8 * (n-1)",
+                "c": "8 * n",
+                "d": "otro"
+            },
+            "answer": "a"
+        },
+        {
+            "id": 27,
+            "statement": "Respecto a los algoritmos de exclusión mutua, ¿cuál afirmación es falsa?",
+            "options": {
+                "a": "Surgen por acceso simultáneo a recursos",
+                "b": "Hay soluciones basadas en token y permisos",
+                "c": "Pueden ser centralizados o distribuidos",
+                "d": "Un ejemplo es el algoritmo Bully"
+            },
+            "answer": "d"
+        },
+        {
+            "id": 28,
+            "statement": "¿Cuál es el valor del vector de f?",
+            "options": {
+                "a": "(6, 5, 3, 1)",
+                "b": "(2, 0, 4, 3)",
+                "c": "(6, 0, 3, 1)",
+                "d": "otro: (6, 3, 3, 3)"
+            },
+            "answer": "d"
+        },
+        {
+            "id": 29,
+            "statement": "¿Cuál es el valor del vector de k?",
+            "options": {
+                "a": "(1, 5, 3, 1)",
+                "b": "(3, 5, 1, 1)",
+                "c": "(3, 5, 2, 1)",
+                "d": "otro: (3, 5, 2, 0)"
+            },
+            "answer": "c"
+        },
+        {
+            "id": 30,
+            "statement": "El alfa más pequeño que cumple el hash para almacenar 2017 es:",
+            "options": {
+                "a": "500",
+                "b": "89",
+                "c": "9",
+                "d": "otro: 1"
+            },
+            "answer": "d"
+        },
+        {
+            "id": 31,
+            "statement": "Respecto a encriptación simétrica y asimétrica, ¿cuál es verdadera?",
+            "options": {
+                "a": "Simétricos sólo en comunicación síncrona",
+                "b": "Asimétricos permiten mayor volumen pero son más lentos",
+                "c": "Buena combinación: comenzar con asimétrico y continuar con simétrico",
+                "d": "Las claves simétricas pueden durar más tiempo"
+            },
+            "answer": "c"
+        },
+        {
+            "id": 32,
+            "statement": "En un algoritmo híbrido, ¿qué clave utiliza Edo para desencriptar la clave simétrica?",
+            "options": {
+                "a": "Su clave pública",
+                "b": "Su clave privada",
+                "c": "La clave pública de Luis",
+                "d": "La clave simétrica compartida"
+            },
+            "answer": "b"
+        },
+        {
+            "id": 33,
+            "statement": "En una red P2P como Bitcoin, ¿qué sistema de nombres tiene mejor desempeño?",
+            "options": {
+                "a": "Punteros de reenvío",
+                "b": "ARP",
+                "c": "Tablas de Hash Distribuidas (DHT)",
+                "d": "Direcciones MAC"
+            },
+            "answer": "c"
+        },
+        {
+            "id": 34,
+            "statement": "¿Cuál alternativa es verdadera respecto a exclusión mutua centralizada y votación?",
+            "options": {
+                "a": "Ambos tienen un único punto de fallo",
+                "b": "Ambos pueden resolver peticiones simultáneas",
+                "c": "Ambos mantienen rendimiento con muchos procesos",
+                "d": "Ambos siguen funcionando si un nodo falla"
+            },
+            "answer": "b"
+        },
+        {
+            "id": 35,
+            "statement": "Respecto a sistemas de nombres basados en atributos, ¿cuál alternativa es falsa?",
+            "options": {
+                "a": "Requieren una definición sintáctica representable como grafo dirigido",
+                "b": "Los atributos solo pueden ser numéricos",
+                "c": "Cada registro es una colección de pares (atributo, valor)",
+                "d": "También se conocen como servicios de directorio"
+            },
+            "answer": "b"
+        }
+    ]
+}
